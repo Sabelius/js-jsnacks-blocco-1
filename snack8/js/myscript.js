@@ -5,6 +5,6 @@ var listaFalsa = [];
 for( var i = 0; i<8; i++){
 var nomeCasuale = listaNomi[Math.floor(Math.random() * listaNomi.length)] + " " + listaCognomi[Math.floor(Math.random() * listaCognomi.length)];
 listaFalsa.push(nomeCasuale);
+document.getElementById("list").innerHTML += "<li>" + nomeCasuale + "</li>";
 }
 
-document.getElementById("list").innerHTML = listaFalsa;
